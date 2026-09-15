@@ -1,4 +1,4 @@
-# ScoreKeeper
+# Score Keeper
 
 Marcador de pontos para jogos de tabuleiro, cartas e dados. Offline, sem backend,
 em inglês, português (BR) e espanhol. A base de build, anúncios e tema veio do
@@ -38,7 +38,7 @@ A abertura e o ícone saem de `mago-keeper-logo.jfif`:
 
 1. **AdMob:** criar o app e trocar o App ID em `AndroidManifest.xml` e os unit IDs em `ads/AdIds.kt`.
 2. **Assinatura:** criar a chave de upload e o `keystore.properties` (modelo em `keystore.properties.example`).
-3. **Nome:** "ScoreKeeper" é provisório e muito disputado na Play. Vale um nome mais distinto na loja.
+3. **Nome:** na loja, "Score Keeper: Placar de Jogos"; no aparelho, "Score Keeper" (`app_name`).
 4. **Loja:** o material está pronto em `playstore/`, com o checklist completo em `playstore/README.md`:
    - textos da ficha em PT, EN e ES;
    - capturas e gráficos de destaque;

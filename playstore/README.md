@@ -50,7 +50,7 @@ canastra, golf de cartas, general, pôquer de dados.
 
 ## Textos da ficha (PT-BR)
 
-**Título** (máx. 30). ⚠️ Confirmar o nome final antes de criar o app.
+**Título** (máx. 30). É também o nome do app na Play Console.
 
 ```
 Score Keeper: Placar de Jogos
@@ -228,13 +228,14 @@ cualquier mesa donde alguien siempre olvida cómo iba el marcador.
 A ordem abaixo evita retrabalho.
 
 ### 1. Antes de criar o app
-- [ ] Nome final escolhido. O título acima é uma sugestão.
+- [x] Nome definido: **Score Keeper: Placar de Jogos**. No aparelho, o ícone mostra só "Score Keeper".
 - [ ] App criado no **AdMob**. App ID e blocos reais colados em `AndroidManifest.xml` e `ads/AdIds.kt`.
 - [ ] Chave de upload criada e `keystore.properties` preenchido.
 - [ ] Site publicado. `https://scorekeeper.borzanti.com/privacidade/` abre numa janela anônima.
 
 ### 2. Criar o app
 Caminho: **Todos os apps → Criar app**.
+- Nome do app: `Score Keeper: Placar de Jogos`.
 - Idioma padrão **português (Brasil)**. Não dá para trocar depois.
 - Tipo **App**, **Gratuito**.
 

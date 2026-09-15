@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Nome de marca: igual em todos os idiomas, por isso não é traduzível. -->
-    <string name="app_name" translatable="false">ScoreKeeper</string>
+    <string name="app_name" translatable="false">Score Keeper</string>
     <string name="play_store_url" translatable="false">https://play.google.com/store/apps/details?id=%s</string>
 
     <!-- Common -->
