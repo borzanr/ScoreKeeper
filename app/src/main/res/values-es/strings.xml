@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Común -->
+    <string name="action_back">Atrás</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_save">GUARDAR</string>
+    <string name="action_share">Compartir</string>
+    <string name="action_undo">Deshacer</string>
+
+    <!-- Apertura -->
+    <string name="intro_tagline">Cada punto, como por arte de magia</string>
+    <string name="intro_tap_to_skip">Toca para saltar</string>
+
+    <!-- Inicio -->
+    <string name="home_new_match">Nueva partida</string>
+    <string name="home_empty_title">Todavía no hay partidas</string>
+    <string name="home_empty_body">Empieza una partida, añade a los jugadores y toca una celda para anotar. Todo se queda en tu teléfono.</string>
+    <string name="home_in_progress">En curso</string>
+    <string name="home_finished">Terminadas</string>
+    <string name="home_not_started">Sin empezar</string>
+    <string name="home_leader">🏆 %1$s · %2$d</string>
+    <string name="home_delete_match">Eliminar partida</string>
+    <string name="home_delete_title">¿Eliminar esta partida?</string>
+    <string name="home_delete_body">Se borrarán los puntos de esta partida. No se puede deshacer.</string>
+
+    <!-- Plantillas de juego -->
+    <string name="template_free_name">Marcador libre</string>
+    <string name="template_free_desc">Cualquier juego. Escribe los puntos de cada ronda y elige si gana el total más alto o el más bajo.</string>
+    <string name="template_card_sum_100_name">Cuadrícula de cartas · menor hasta 100</string>
+    <string name="template_card_sum_100_desc">Para juegos de cuadrícula con cartas de −2 a 12. Toca las cartas que quedan en cada cuadrícula; quien cierra la ronda puntúa doble si no tiene el menor total. El juego termina en 100 y gana el total más bajo.</string>
+    <string name="template_push_luck_200_name">Tienta la suerte · hasta 200</string>
+    <string name="template_push_luck_200_desc">Para juegos de voltear cartas y pasarse. Elige las cartas numéricas (0–12), las cartas de bonificación y ×2. Pasarse vale 0 y 7 cartas numéricas dan +15. El juego termina en 200.</string>
+    <string name="template_dice_categories_name">Hoja de dados · 5 dados</string>
+    <string name="template_dice_categories_desc">La hoja clásica de 13 categorías. Toca los dados y la app calcula la puntuación; bonificación de +35 cuando la sección superior llega a 63.</string>
+    <string name="template_golf_name">Golf (juego de cartas)</string>
+    <string name="template_golf_desc">Gana el total más bajo tras 9 rondas. Puedes cambiar el número de rondas.</string>
+    <string name="template_rummy_name">Rummy · puntos de penalización</string>
+    <string name="template_rummy_desc">Suma los puntos de penalización de cada jugador por mano. El juego termina cuando alguien llega a 100; gana el total más bajo.</string>
+    <string name="template_dominoes_name">Dominó · suma de puntos</string>
+    <string name="template_dominoes_desc">Quien domina anota los puntos de las fichas que les quedan a los rivales. El juego termina cuando alguien llega a 100.</string>
+    <string name="template_dominoes_hits_name">Dominó · cierres hasta 6</string>
+    <string name="template_dominoes_hits_desc">Al estilo brasileño, normalmente en parejas: cada mano vale según el tipo de cierre (simple, doble, por las dos puntas, cruzada). Gana quien llega a 6.</string>
+    <string name="template_truco_name">Truco · hasta 12</string>
+    <string name="template_truco_desc">Truco paulista: cada mano vale 1, 3, 6, 9 o 12. Dos bandos; gana quien llega a 12.</string>
+
+    <!-- Nueva partida -->
+    <string name="new_title">Nueva partida</string>
+    <string name="new_section_game">Juego</string>
+    <string name="new_section_options">Reglas</string>
+    <string name="new_section_players">Jugadores</string>
+    <string name="new_highest_wins">Gana el más alto</string>
+    <string name="new_lowest_wins">Gana el más bajo</string>
+    <string name="new_target_points">El juego termina en (puntos)</string>
+    <string name="new_target_points_optional">El juego termina en (puntos, opcional)</string>
+    <string name="new_rounds">Número de rondas</string>
+    <string name="new_add_player_label">Nombre del jugador</string>
+    <string name="new_add_player">Añadir jugador</string>
+    <string name="new_remove_player">Quitar jugador</string>
+    <string name="new_who_starts">¿Quién empieza?</string>
+    <string name="new_starts_body">¡Empieza %s! El orden de los jugadores se giró para coincidir.</string>
+    <string name="new_start">EMPEZAR PARTIDA</string>
+    <plurals name="new_error_min_players">
+        <item quantity="one">Añade al menos %d jugador.</item>
+        <item quantity="many">Añade al menos %d jugadores.</item>
+        <item quantity="other">Añade al menos %d jugadores.</item>
+    </plurals>
+    <string name="new_error_max_players">Este juego permite hasta %d jugadores.</string>
+    <string name="new_error_rounds">Indica el número de rondas.</string>
+
+    <!-- Partida -->
+    <string name="match_round">Ronda %d</string>
+    <string name="match_show_results">Ver resultado</string>
+    <string name="match_highest_wins">Gana el más alto</string>
+    <string name="match_lowest_wins">Gana el más bajo</string>
+    <string name="match_ends_at_points">termina en %d</string>
+    <plurals name="match_rounds">
+        <item quantity="one">%d ronda</item>
+        <item quantity="many">%d rondas</item>
+        <item quantity="other">%d rondas</item>
+    </plurals>
+    <string name="match_all_categories">todas las categorías</string>
+    <string name="match_no_end">sin límite</string>
+    <string name="match_bonus_row">Bonus</string>
+
+    <!-- Anotar puntos -->
+    <string name="entry_tap_cards">Tocar cartas</string>
+    <string name="entry_type_total">Escribir total</string>
+    <string name="entry_tap_hint">Toca el valor de cada carta que queda en la cuadrícula</string>
+    <string name="entry_clear">Borrar</string>
+    <string name="entry_closer">Cerró la ronda (dobla si no es el más bajo)</string>
+    <string name="entry_number_cards">Cartas numéricas</string>
+    <string name="entry_modifiers">Cartas de bonificación</string>
+    <string name="entry_bust">Se pasó (vale 0)</string>
+    <string name="entry_flip_bonus">¡7 cartas! +%d</string>
+    <string name="entry_dice_hint">Toca los cinco dados. Toca un dado de arriba para quitarlo.</string>
+    <string name="entry_scratch">Tachar (0)</string>
+    <string name="entry_delete">Borrar puntuación</string>
+
+    <!-- Categorías de dados -->
+    <string name="dice_ones">Unos</string>
+    <string name="dice_twos">Doses</string>
+    <string name="dice_threes">Treses</string>
+    <string name="dice_fours">Cuatros</string>
+    <string name="dice_fives">Cincos</string>
+    <string name="dice_sixes">Seises</string>
+    <string name="dice_three_of_a_kind">Trío</string>
+    <string name="dice_four_of_a_kind">Póker</string>
+    <string name="dice_full_house">Full</string>
+    <string name="dice_small_straight">Escalera corta</string>
+    <string name="dice_large_straight">Escalera larga</string>
+    <string name="dice_five_of_a_kind">Repóker</string>
+    <string name="dice_chance">Chance</string>
+
+    <!-- Puntos rápidos -->
+    <string name="entry_choose">Elegir</string>
+    <string name="entry_type_value">Escribir valor</string>
+    <string name="quick_hit_simple">Cierre simple</string>
+    <string name="quick_hit_double">Cierre con doble</string>
+    <string name="quick_hit_both_ends">Por las dos puntas</string>
+    <string name="quick_hit_cross">Cruzada</string>
+    <string name="quick_blocked">Tranque</string>
+    <string name="quick_truco_regular">Mano normal</string>
+    <string name="quick_truco">Truco</string>
+    <string name="quick_truco_six">Seis</string>
+    <string name="quick_truco_nine">Nueve</string>
+    <string name="quick_truco_twelve">Doce</string>
+
+    <!-- Guía rápida -->
+    <string name="guide_open">Cómo anotar</string>
+    <string name="guide_title">Guía rápida</string>
+    <string name="guide_tips_title">Consejos</string>
+    <string name="guide_tip_edit">Toca una celda ya anotada para corregirla o borrarla.</string>
+    <string name="guide_tip_undo">La flecha de deshacer revierte el último cambio.</string>
+    <string name="guide_tip_results">El trofeo muestra la clasificación en cualquier momento, y puedes seguir jugando después del resultado.</string>
+    <string name="guide_tip_saved">La partida se guarda: puedes cerrar la app y volver más tarde.</string>
+    <string name="guide_got_it">ENTENDIDO</string>
+
+    <string name="guide_free_1">Toca la celda del jugador en la ronda para escribir los puntos. Usa ± para valores negativos.</string>
+    <string name="guide_free_2">No hace falta anotar ceros: deja vacío a quien no puntuó.</string>
+    <string name="guide_free_3">Al crear la partida eliges si gana el total más alto o el más bajo y, si quieres, un objetivo que termina el juego.</string>
+
+    <string name="guide_card_sum_1">Al final de cada ronda, toca la celda del jugador y toca el valor de cada carta que queda en su cuadrícula, o usa \"Escribir total\".</string>
+    <string name="guide_card_sum_2">Marca \"Cerró la ronda\" para quien reveló todas sus cartas primero. Si su puntuación es positiva y no es la más baja, se duplica; el marcador muestra ×2.</string>
+    <string name="guide_card_sum_3">Cuando alguien llega a 100 al final de una ronda, el juego termina. Gana el total más bajo.</string>
+
+    <string name="guide_push_luck_1">Cuando un jugador se planta o se pasa, toca su celda.</string>
+    <string name="guide_push_luck_2">Toca las cartas numéricas que tiene, las de bonificación (+2 a +10) y ×2 si la tiene. ×2 duplica solo las numéricas.</string>
+    <string name="guide_push_luck_3">7 cartas numéricas distintas suman +15 automáticamente. Si se pasó, marca \"Se pasó\" y la ronda vale 0.</string>
+    <string name="guide_push_luck_4">Cuando alguien llega a 200 al final de una ronda, el juego termina. Gana el total más alto.</string>
+
+    <string name="guide_dice_1">Cada fila es una categoría. En tu turno, toca la celda de la categoría que quieres usar.</string>
+    <string name="guide_dice_2">Toca los cinco dados de la mesa; la app calcula los puntos de esa categoría.</string>
+    <string name="guide_dice_3">Si no encajan en nada, usa \"Tachar (0)\" en una categoría libre.</string>
+    <string name="guide_dice_4">La fila Bonus muestra el progreso de la sección superior: con 63 puntos ganas +35. El juego termina cuando todos llenan las 13 categorías.</string>
+
+    <string name="guide_golf_1">Al final de cada ronda, toca la celda de cada jugador y escribe los puntos de sus cartas.</string>
+    <string name="guide_golf_2">¿Cartas negativas? Usa ± en el teclado.</string>
+    <string name="guide_golf_3">Tras el número de rondas acordado (9 por defecto), gana el total más bajo.</string>
+
+    <string name="guide_rummy_1">Cuando alguien cierra, toca la celda de cada jugador y escribe los puntos de las cartas que le quedan en la mano.</string>
+    <string name="guide_rummy_2">Quien cerró puede quedar vacío (0).</string>
+    <string name="guide_rummy_3">Cuando alguien llega a 100 al final de una mano, el juego termina. Gana el total más bajo.</string>
+
+    <string name="guide_dominoes_1">Quien domina anota los puntos de las fichas que les quedan a los rivales: toca su celda y escribe el total.</string>
+    <string name="guide_dominoes_2">Si hay tranque, quien tiene menos puntos en la mano anota la suma de los demás.</string>
+    <string name="guide_dominoes_3">Solo anota quien gana la mano. El juego termina en cuanto alguien llega al objetivo (100 por defecto).</string>
+
+    <string name="guide_hits_1">Si juegan en parejas, añade cada pareja como un jugador (p. ej. \"Nosotros\" y \"Ellos\").</string>
+    <string name="guide_hits_2">En cada mano, toca la celda de quien cerró y elige el tipo: simple +1, con doble +2, por las dos puntas +3, cruzada +4, tranque +1.</string>
+    <string name="guide_hits_3">Los valores cambian según la región: usa \"Escribir valor\" si en tu mesa se juega distinto.</string>
+    <string name="guide_hits_4">Gana quien llega primero a 6. Puedes cambiar el objetivo al crear la partida.</string>
+
+    <string name="guide_truco_1">Añade los dos equipos (o los dos jugadores) como jugadores, p. ej. \"Nosotros\" y \"Ellos\".</string>
+    <string name="guide_truco_2">En cada mano, toca la celda del bando ganador y elige cuánto valió: normal +1, truco +3, seis +6, nueve +9, doce +12. Si el rival no quiso, anota lo que valía la mano antes del canto.</string>
+    <string name="guide_truco_3">Mano de once: el bando con 11 puede ver las cartas del compañero y decidir si juega por 3; si no juega, el rival anota 1.</string>
+    <string name="guide_truco_4">Gana quien llega primero a 12. ¿Juegas otra variante? Usa \"Escribir valor\" y ajusta el objetivo al crear la partida.</string>
+
+    <!-- Resultado -->
+    <string name="result_winner">Ganador</string>
+    <string name="result_tie">¡Empate!</string>
+    <string name="result_finish">TERMINAR PARTIDA</string>
+    <string name="result_back_home">VOLVER A LAS PARTIDAS</string>
+    <string name="result_keep_playing">Seguir jugando</string>
+    <string name="result_luckydraw">¿Necesitas sortear nombres o números? Prueba LuckyDraw</string>
+    <string name="share_title">Compartir marcador</string>
+    <string name="share_body">🏆 %1$s\n\n%2$s\n\nLleva el marcador tú también: %3$s</string>
+
+    <!-- Ajustes -->
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_language">Idioma</string>
+    <string name="settings_language_system">Idioma del sistema</string>
+    <string name="settings_privacy">Opciones de privacidad</string>
+    <string name="settings_privacy_desc">Revisa cómo usan tus datos los anuncios</string>
+    <string name="settings_rate">Valorar la app</string>
+    <string name="settings_share_app">Compartir la app</string>
+    <string name="share_app_body">Llevo el marcador de juegos de mesa y cartas con esta app: %s</string>
+    <string name="settings_luckydraw_desc">Nuestra app para sortear nombres y números</string>
+    <string name="settings_version">Versión %s</string>
+</resources>

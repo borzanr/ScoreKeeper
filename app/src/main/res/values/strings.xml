@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nome de marca: igual em todos os idiomas, por isso não é traduzível. -->
+    <string name="app_name" translatable="false">ScoreKeeper</string>
+    <string name="play_store_url" translatable="false">https://play.google.com/store/apps/details?id=%s</string>
+
+    <!-- Common -->
+    <string name="action_back">Back</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_save">SAVE</string>
+    <string name="action_share">Share</string>
+    <string name="action_undo">Undo</string>
+
+    <!-- Intro -->
+    <string name="intro_tagline">Every point, like magic</string>
+    <string name="intro_tap_to_skip">Tap to skip</string>
+
+    <!-- Home -->
+    <string name="home_new_match">New match</string>
+    <string name="home_empty_title">No matches yet</string>
+    <string name="home_empty_body">Start a match, add the players and tap a cell to score. Everything stays on your phone.</string>
+    <string name="home_in_progress">In progress</string>
+    <string name="home_finished">Finished</string>
+    <string name="home_not_started">Not started</string>
+    <!-- %1$s = leader name(s), %2$d = points -->
+    <string name="home_leader">🏆 %1$s · %2$d</string>
+    <string name="home_delete_match">Delete match</string>
+    <string name="home_delete_title">Delete this match?</string>
+    <string name="home_delete_body">The scores of this match will be erased. This can\'t be undone.</string>
+
+    <!-- Game templates -->
+    <string name="template_free_name">Free scoring</string>
+    <string name="template_free_desc">Any game. Type the points each round and choose whether the highest or the lowest total wins.</string>
+    <string name="template_card_sum_100_name">Card grid · lowest to 100</string>
+    <string name="template_card_sum_100_desc">For grid card games with cards from −2 to 12. Tap the cards left in each grid; whoever ends the round scores double if not the lowest. The game ends at 100 and the lowest total wins.</string>
+    <string name="template_push_luck_200_name">Push your luck · to 200</string>
+    <string name="template_push_luck_200_desc">For flip-and-bust card games. Pick the number cards (0–12), bonus cards and ×2. A bust scores 0 and 7 number cards earn +15. The game ends at 200.</string>
+    <string name="template_dice_categories_name">Dice scorecard · 5 dice</string>
+    <string name="template_dice_categories_desc">The classic 13-category scorecard. Tap the dice and the score is calculated for you; +35 bonus when the upper section reaches 63.</string>
+    <string name="template_golf_name">Golf (card game)</string>
+    <string name="template_golf_desc">Lowest total after 9 rounds wins. You can change the number of rounds.</string>
+    <string name="template_rummy_name">Rummy · penalty points</string>
+    <string name="template_rummy_desc">Add each player\'s penalty points per hand. The game ends when someone reaches 100; the lowest total wins.</string>
+    <string name="template_dominoes_name">Dominoes · pip count</string>
+    <string name="template_dominoes_desc">Whoever dominoes scores the pips left in the opponents\' hands. The game ends when someone reaches 100.</string>
+    <string name="template_dominoes_hits_name">Dominoes · hits to 6</string>
+    <string name="template_dominoes_hits_desc">Brazilian style, usually in pairs: each hand scores by the kind of domino (simple, double, both ends, cross). First to 6 wins.</string>
+    <string name="template_truco_name">Truco · to 12</string>
+    <string name="template_truco_desc">Paulista truco: each hand is worth 1, 3, 6, 9 or 12. Two sides; first to 12 wins.</string>
+
+    <!-- New match -->
+    <string name="new_title">New match</string>
+    <string name="new_section_game">Game</string>
+    <string name="new_section_options">Rules</string>
+    <string name="new_section_players">Players</string>
+    <string name="new_highest_wins">Highest wins</string>
+    <string name="new_lowest_wins">Lowest wins</string>
+    <string name="new_target_points">Game ends at (points)</string>
+    <string name="new_target_points_optional">Game ends at (points, optional)</string>
+    <string name="new_rounds">Number of rounds</string>
+    <string name="new_add_player_label">Player name</string>
+    <string name="new_add_player">Add player</string>
+    <string name="new_remove_player">Remove player</string>
+    <string name="new_who_starts">Who starts?</string>
+    <string name="new_starts_body">%s starts! The turn order was rotated to match.</string>
+    <string name="new_start">START MATCH</string>
+    <plurals name="new_error_min_players">
+        <item quantity="one">Add at least %d player.</item>
+        <item quantity="other">Add at least %d players.</item>
+    </plurals>
+    <string name="new_error_max_players">This game allows up to %d players.</string>
+    <string name="new_error_rounds">Set the number of rounds.</string>
+
+    <!-- Match -->
+    <string name="match_round">Round %d</string>
+    <string name="match_show_results">Show results</string>
+    <string name="match_highest_wins">Highest wins</string>
+    <string name="match_lowest_wins">Lowest wins</string>
+    <string name="match_ends_at_points">ends at %d</string>
+    <plurals name="match_rounds">
+        <item quantity="one">%d round</item>
+        <item quantity="other">%d rounds</item>
+    </plurals>
+    <string name="match_all_categories">all categories</string>
+    <string name="match_no_end">no limit</string>
+    <string name="match_bonus_row">Bonus</string>
+
+    <!-- Score entry -->
+    <string name="entry_tap_cards">Tap cards</string>
+    <string name="entry_type_total">Type total</string>
+    <string name="entry_tap_hint">Tap the value of each card left in the grid</string>
+    <string name="entry_clear">Clear</string>
+    <string name="entry_closer">Ended the round (doubles if not the lowest)</string>
+    <string name="entry_number_cards">Number cards</string>
+    <string name="entry_modifiers">Bonus cards</string>
+    <string name="entry_bust">Bust (scores 0)</string>
+    <string name="entry_flip_bonus">7 cards! +%d</string>
+    <string name="entry_dice_hint">Tap the five dice. Tap a die above to remove it.</string>
+    <string name="entry_scratch">Scratch (0)</string>
+    <string name="entry_delete">Delete score</string>
+
+    <!-- Dice categories -->
+    <string name="dice_ones">Ones</string>
+    <string name="dice_twos">Twos</string>
+    <string name="dice_threes">Threes</string>
+    <string name="dice_fours">Fours</string>
+    <string name="dice_fives">Fives</string>
+    <string name="dice_sixes">Sixes</string>
+    <string name="dice_three_of_a_kind">Three of a kind</string>
+    <string name="dice_four_of_a_kind">Four of a kind</string>
+    <string name="dice_full_house">Full house</string>
+    <string name="dice_small_straight">Small straight</string>
+    <string name="dice_large_straight">Large straight</string>
+    <string name="dice_five_of_a_kind">Five of a kind</string>
+    <string name="dice_chance">Chance</string>
+
+    <!-- Quick points -->
+    <string name="entry_choose">Choose</string>
+    <string name="entry_type_value">Type value</string>
+    <string name="quick_hit_simple">Simple domino</string>
+    <string name="quick_hit_double">Domino with a double</string>
+    <string name="quick_hit_both_ends">Both ends</string>
+    <string name="quick_hit_cross">Cross (double on both ends)</string>
+    <string name="quick_blocked">Blocked game</string>
+    <string name="quick_truco_regular">Regular hand</string>
+    <string name="quick_truco">Truco</string>
+    <string name="quick_truco_six">Six</string>
+    <string name="quick_truco_nine">Nine</string>
+    <string name="quick_truco_twelve">Twelve</string>
+
+    <!-- Quick guide -->
+    <string name="guide_open">How to score</string>
+    <string name="guide_title">Quick guide</string>
+    <string name="guide_tips_title">Tips</string>
+    <string name="guide_tip_edit">Tap a filled cell to fix or delete a score.</string>
+    <string name="guide_tip_undo">The undo arrow reverts the last change.</string>
+    <string name="guide_tip_results">The trophy shows the standings at any time, and you can keep playing after the result.</string>
+    <string name="guide_tip_saved">Matches are saved: close the app and come back later.</string>
+    <string name="guide_got_it">GOT IT</string>
+
+    <string name="guide_free_1">Tap a player\'s cell in a round to type the points. Use ± for negative values.</string>
+    <string name="guide_free_2">No need to type zeros: leave empty whoever didn\'t score.</string>
+    <string name="guide_free_3">When creating the match you choose whether the highest or lowest total wins and, optionally, a target that ends the game.</string>
+
+    <string name="guide_card_sum_1">At the end of each round, tap the player\'s cell and tap the value of each card left in their grid, or use \"Type total\".</string>
+    <string name="guide_card_sum_2">Tick \"Ended the round\" for whoever revealed all cards first. If their round score is positive and not the lowest, it doubles; the board shows ×2.</string>
+    <string name="guide_card_sum_3">When someone reaches 100 at the end of a round, the game ends. Lowest total wins.</string>
+
+    <string name="guide_push_luck_1">When a player stops or busts, tap their cell.</string>
+    <string name="guide_push_luck_2">Tap the number cards they hold, the bonus cards (+2 to +10) and ×2 if they have it. ×2 doubles only the number cards.</string>
+    <string name="guide_push_luck_3">7 different number cards add +15 automatically. If they busted, tick \"Bust\" and the round scores 0.</string>
+    <string name="guide_push_luck_4">When someone reaches 200 at the end of a round, the game ends. Highest total wins.</string>
+
+    <string name="guide_dice_1">Each row is a category. On your turn, tap the cell of the category you want to use.</string>
+    <string name="guide_dice_2">Tap the five dice on the table; the app calculates the points for that category.</string>
+    <string name="guide_dice_3">If they don\'t fit anything, use \"Scratch (0)\" on a free category.</string>
+    <string name="guide_dice_4">The Bonus row tracks the upper section: 63 points earn +35. The game ends when everyone fills all 13 categories.</string>
+
+    <string name="guide_golf_1">At the end of each round, tap each player\'s cell and type the points of their cards.</string>
+    <string name="guide_golf_2">Negative cards? Use ± on the keypad.</string>
+    <string name="guide_golf_3">After the agreed number of rounds (9 by default), the lowest total wins.</string>
+
+    <string name="guide_rummy_1">When someone goes out, tap each player\'s cell and type the points of the cards left in their hand.</string>
+    <string name="guide_rummy_2">Whoever went out can stay empty (0).</string>
+    <string name="guide_rummy_3">When someone reaches 100 at the end of a hand, the game ends. Lowest total wins.</string>
+
+    <string name="guide_dominoes_1">Whoever dominoes scores the pips left in the opponents\' hands: tap their cell and type the total.</string>
+    <string name="guide_dominoes_2">If the game is blocked, whoever has the fewest pips scores the others\' total.</string>
+    <string name="guide_dominoes_3">Only the winner of the hand scores. The game ends as soon as someone reaches the target (100 by default).</string>
+
+    <string name="guide_hits_1">Playing in pairs, add each pair as one player (e.g. \"Us\" and \"Them\").</string>
+    <string name="guide_hits_2">Each hand, tap the cell of whoever dominoed and pick the kind: simple +1, double +2, both ends +3, cross +4, blocked game +1.</string>
+    <string name="guide_hits_3">Values vary by region: use \"Type value\" if your table plays differently.</string>
+    <string name="guide_hits_4">First to 6 wins. You can change the target when creating the match.</string>
+
+    <string name="guide_truco_1">Add the two teams (or the two players) as players, e.g. \"Us\" and \"Them\".</string>
+    <string name="guide_truco_2">Each hand, tap the cell of the winning side and pick what it was worth: regular +1, truco +3, six +6, nine +9, twelve +12. If the other side folds, score what the hand was worth before the raise.</string>
+    <string name="guide_truco_3">Hand of eleven: the side with 11 may look at the partner\'s cards and decide to play for 3; if they fold, the opponents score 1.</string>
+    <string name="guide_truco_4">First to 12 wins. Playing another variant? Use \"Type value\" and set the target when creating the match.</string>
+
+    <!-- Result -->
+    <string name="result_winner">Winner</string>
+    <string name="result_tie">It\'s a tie!</string>
+    <string name="result_finish">FINISH MATCH</string>
+    <string name="result_back_home">BACK TO MATCHES</string>
+    <string name="result_keep_playing">Keep playing</string>
+    <string name="result_luckydraw">Need to draw names or numbers? Try LuckyDraw</string>
+    <string name="share_title">Share scores</string>
+    <!-- %1$s = game, %2$s = standings, %3$s = store link -->
+    <string name="share_body">🏆 %1$s\n\n%2$s\n\nKeep score too: %3$s</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_system">System language</string>
+    <string name="settings_privacy">Privacy choices</string>
+    <string name="settings_privacy_desc">Review how ads use your data</string>
+    <string name="settings_rate">Rate the app</string>
+    <string name="settings_share_app">Share the app</string>
+    <string name="share_app_body">I keep score of board and card games with this app: %s</string>
+    <string name="settings_luckydraw" translatable="false">LuckyDraw</string>
+    <string name="settings_luckydraw_desc">Our app to draw names and numbers</string>
+    <string name="settings_version">Version %s</string>
+</resources>

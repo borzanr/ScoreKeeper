@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        No Android 12+ o sistema sempre mostra a própria splash antes do app. Em
+        vez de brigar com ela, ela vira o primeiro quadro da abertura: mesmo fundo
+        e o brasão, e logo em seguida entra a ilustração do mago (IntroScreen).
+    -->
+    <style name="Theme.ScoreKeeper" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/brand_background</item>
+        <item name="android:navigationBarColor">@color/brand_background</item>
+        <item name="android:windowBackground">@color/brand_background</item>
+        <item name="android:windowSplashScreenBackground">@color/brand_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_shield</item>
+    </style>
+</resources>

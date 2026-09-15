@@ -1,0 +1,108 @@
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body {
+    width: 1080px; height: 1920px; overflow: hidden;
+    background: #0E0A14;
+    font-family: "Segoe UI", system-ui, Arial, sans-serif;
+    position: relative;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  /* Halo lilás em cima (manto do mago) e dourado embaixo (brasão). */
+  .halo-top {
+    position: absolute; left: 50%; top: -420px; transform: translateX(-50%);
+    width: 1180px; height: 900px; border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(183,148,246,.24) 0%, rgba(183,148,246,.06) 50%, rgba(183,148,246,0) 72%);
+  }
+  .halo-bottom {
+    position: absolute; left: 50%; bottom: -520px; transform: translateX(-50%);
+    width: 1300px; height: 900px; border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(242,193,78,.16) 0%, rgba(242,193,78,0) 68%);
+  }
+  .spark { position: absolute; border-radius: 50%; }
+
+  header { position: relative; text-align: center; padding: 104px 70px 0; flex: none; }
+  h1 {
+    font-size: 80px; font-weight: 800; letter-spacing: -2.2px; line-height: 1.06;
+    color: #EFE9F5; margin: 0 0 22px;
+  }
+  h1 em { font-style: normal; color: #F2C14E; }
+  .sub { font-size: 35px; font-weight: 500; color: #A79BB5; margin: 0; line-height: 1.35; }
+
+  /* Moldura do aparelho. A imagem sobe para esconder a barra de status do
+     celular e o container recorta o rodapé. */
+  .phone {
+    position: relative; margin: auto 0;
+    width: 720px;
+    border-radius: 46px; overflow: hidden;
+    border: 9px solid #2A2136;
+    box-shadow: 0 0 0 2px rgba(183,148,246,.20), 0 40px 90px rgba(0,0,0,.65),
+                0 0 120px rgba(183,148,246,.14);
+    background: #0E0A14;
+  }
+  .phone img { display: block; width: 100%; height: auto; }
+</style>
+
+<div class="halo-top"></div>
+<div class="halo-bottom"></div>
+
+<!-- Faíscas discretas, como as do cajado -->
+<div class="spark" style="left:70px;  top:80px;   width:14px; height:14px; background:#F2C14E; box-shadow:0 0 18px #F2C14E;"></div>
+<div class="spark" style="left:996px; top:120px;  width:10px; height:10px; background:#7DD3FC; box-shadow:0 0 16px #7DD3FC;"></div>
+<div class="spark" style="left:52px;  top:900px;  width:9px;  height:9px;  background:#B794F6; box-shadow:0 0 14px #B794F6;"></div>
+<div class="spark" style="left:1010px;top:1100px; width:12px; height:12px; background:#F2C14E; box-shadow:0 0 16px #F2C14E; opacity:.8;"></div>
+<div class="spark" style="left:88px;  top:1620px; width:10px; height:10px; background:#7DD3FC; box-shadow:0 0 14px #7DD3FC; opacity:.8;"></div>
+
+<header>
+  <h1 id="title"></h1>
+  <p class="sub" id="sub"></p>
+</header>
+
+<div class="phone" id="phone"><img id="shot" alt=""></div>
+
+<script>
+  // top: fração da tela escondida em cima (barra de status do celular).
+  // crop: até que fração da tela aparece dentro da moldura.
+  var SLIDES = {
+    pt: {
+      dir: "shots",
+      "1": { t: "O placar de <em>todo jogo</em>", s: "Toque na célula: o app soma e mostra quem lidera", img: "scoreboard.png", top: 0.042, crop: 0.56 },
+      "2": { t: "Toque e <em>o app soma</em>", s: "Cartas, bônus, ×2 e estouro calculados na hora", img: "cards.png", top: 0.042, crop: 0.93 },
+      "3": { t: "Cartela de dados <em>automática</em>", s: "Escolha os dados e veja os pontos da categoria", img: "dice.png", top: 0.042, crop: 0.93 },
+      "4": { t: "Pódio com <em>confete</em>", s: "Fim de jogo automático e placar para compartilhar", img: "result.png", top: 0.042, crop: 0.76 },
+      "5": { t: "<em>9 jogos</em> prontos", s: "Truco, dominó, cartas e dados, com guia rápido", img: "templates.png", top: 0.042, crop: 0.93 }
+    },
+    en: {
+      dir: "shots-en",
+      "1": { t: "Score <em>any game</em>", s: "Tap a cell: totals and the leader update instantly", img: "scoreboard.png", top: 0.042, crop: 0.56 },
+      "2": { t: "Tap, and <em>it adds up</em>", s: "Cards, bonuses, ×2 and busts handled for you", img: "cards.png", top: 0.042, crop: 0.93 },
+      "3": { t: "Dice scorecard, <em>automatic</em>", s: "Pick the dice and see the category score", img: "dice.png", top: 0.042, crop: 0.93 },
+      "4": { t: "A podium with <em>confetti</em>", s: "Automatic game over and a score to share", img: "result.png", top: 0.042, crop: 0.76 },
+      "5": { t: "<em>9 games</em> ready to play", s: "Cards, dice, dominoes and more, each with a guide", img: "templates.png", top: 0.042, crop: 0.93 }
+    },
+    es: {
+      dir: "shots-es",
+      "1": { t: "Marcador de <em>todo juego</em>", s: "Toca la celda: la app suma y muestra quién gana", img: "scoreboard.png", top: 0.042, crop: 0.56 },
+      "2": { t: "Toca y <em>la app suma</em>", s: "Cartas, bonus, ×2 y pasarse calculados al instante", img: "cards.png", top: 0.042, crop: 0.93 },
+      "3": { t: "Hoja de dados <em>automática</em>", s: "Elige los dados y mira los puntos de la categoría", img: "dice.png", top: 0.042, crop: 0.93 },
+      "4": { t: "Podio con <em>confeti</em>", s: "Fin de partida automático y marcador para compartir", img: "result.png", top: 0.042, crop: 0.76 },
+      "5": { t: "<em>9 juegos</em> listos", s: "Truco, dominó, cartas y dados, con guía rápida", img: "templates.png", top: 0.042, crop: 0.93 }
+    }
+  };
+
+  var params = new URLSearchParams(location.search);
+  var requested = params.get("lang");
+  var lang = SLIDES[requested] ? requested : "pt";
+  var set = SLIDES[lang];
+  var slide = set[params.get("n") || "1"];
+
+  document.getElementById("title").innerHTML = slide.t;
+  document.getElementById("sub").textContent = slide.s;
+
+  // Altura da imagem na moldura: 720px de largura para uma tela 1080×2400.
+  var screenHeight = 720 * (2400 / 1080);
+  var img = document.getElementById("shot");
+  img.src = set.dir + "/" + slide.img;
+  img.style.marginTop = -Math.round(screenHeight * slide.top) + "px";
+  document.getElementById("phone").style.height = Math.round(screenHeight * (slide.crop - slide.top)) + "px";
+</script>

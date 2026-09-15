@@ -1,0 +1,16 @@
+# Texto normalizado para LF no repositório.
+* text=auto
+
+# Scripts de shell precisam de LF mesmo quando o checkout é no Windows,
+# senão o bash acusa "\r: command not found".
+gradlew text eol=lf
+*.sh text eol=lf
+
+# Scripts do Windows ficam com CRLF.
+*.bat text eol=crlf
+
+# Binários: nunca converter.
+*.png binary
+*.jpg binary
+*.jfif binary
+*.jar binary

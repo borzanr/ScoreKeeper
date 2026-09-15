@@ -1,0 +1,66 @@
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body {
+    width: 1024px; height: 500px; overflow: hidden;
+    background: #0E0A14 url("art.jpg") no-repeat;
+    /* A arte tem 1024×776: mostra do brasão até as mãos do mago. */
+    background-size: 1024px 776px;
+    background-position: 0 -26px;
+    font-family: "Segoe UI", system-ui, Arial, sans-serif;
+    position: relative;
+  }
+  /* Escurece o lado direito (poções e cajado) para o texto respirar. */
+  .shade {
+    position: absolute; inset: 0;
+    background: linear-gradient(to left, rgba(14,10,20,.96) 0%, rgba(14,10,20,.90) 30%, rgba(14,10,20,.35) 52%, rgba(14,10,20,0) 64%);
+  }
+  .vignette {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(14,10,20,.55) 0%, rgba(14,10,20,0) 30%);
+  }
+  .copy {
+    position: absolute; right: 44px; top: 0; bottom: 0; width: 330px;
+    display: flex; flex-direction: column; justify-content: center; gap: 22px;
+  }
+  .tag {
+    font-size: 46px; font-weight: 800; letter-spacing: -1.4px; line-height: 1.05;
+    color: #EFE9F5; margin: 0;
+  }
+  .tag em { font-style: normal; color: #F2C14E; }
+  .pills { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+  .pill {
+    font-size: 19px; font-weight: 600; white-space: nowrap;
+    color: #EFE9F5; background: rgba(183,148,246,.16);
+    box-shadow: inset 0 0 0 1.5px rgba(183,148,246,.55);
+    border-radius: 999px; padding: 8px 18px;
+  }
+  .pill.gold { color: #0E0A14; background: #F2C14E; box-shadow: none; }
+</style>
+
+<div class="shade"></div>
+<div class="vignette"></div>
+
+<div class="copy">
+  <h1 class="tag" id="tag"></h1>
+  <div class="pills">
+    <span class="pill gold" id="pill1"></span>
+    <span class="pill" id="pill2"></span>
+    <span class="pill" id="pill3"></span>
+  </div>
+</div>
+
+<script>
+  // A arte já traz o nome no brasão; aqui vão só a promessa e três pílulas.
+  var COPY = {
+    pt: { tag: "O placar de <em>todo jogo</em>", pills: ["Soma sozinho", "Truco, dominó e dados", "Sem papel e caneta"] },
+    en: { tag: "Keep score of <em>any game</em>", pills: ["Adds it up for you", "Cards, dice, dominoes", "No pen and paper"] },
+    es: { tag: "El marcador de <em>todo juego</em>", pills: ["Suma solo", "Truco, dominó y dados", "Sin papel ni lápiz"] }
+  };
+
+  var copy = COPY[new URLSearchParams(location.search).get("lang")] || COPY.pt;
+  document.getElementById("tag").innerHTML = copy.tag;
+  copy.pills.forEach(function (text, i) {
+    document.getElementById("pill" + (i + 1)).textContent = text;
+  });
+</script>

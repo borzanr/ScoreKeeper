@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Roxo-escuro do fundo do ícone, tirado do manto do mago. -->
+    <color name="ic_launcher_background">#FF2A1845</color>
+    <!-- Fundo das janelas e da splash; igual ao Ink do tema Compose. -->
+    <color name="brand_background">#FF0E0A14</color>
+</resources>

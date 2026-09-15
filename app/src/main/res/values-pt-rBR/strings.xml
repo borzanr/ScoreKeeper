@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Comum -->
+    <string name="action_back">Voltar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_delete">Excluir</string>
+    <string name="action_save">SALVAR</string>
+    <string name="action_share">Compartilhar</string>
+    <string name="action_undo">Desfazer</string>
+
+    <!-- Abertura -->
+    <string name="intro_tagline">Cada ponto, como mágica</string>
+    <string name="intro_tap_to_skip">Toque para pular</string>
+
+    <!-- Início -->
+    <string name="home_new_match">Nova partida</string>
+    <string name="home_empty_title">Nenhuma partida ainda</string>
+    <string name="home_empty_body">Comece uma partida, adicione os jogadores e toque numa célula para marcar. Tudo fica no seu celular.</string>
+    <string name="home_in_progress">Em andamento</string>
+    <string name="home_finished">Encerradas</string>
+    <string name="home_not_started">Não começou</string>
+    <string name="home_leader">🏆 %1$s · %2$d</string>
+    <string name="home_delete_match">Excluir partida</string>
+    <string name="home_delete_title">Excluir esta partida?</string>
+    <string name="home_delete_body">Os pontos desta partida serão apagados. Não dá para desfazer.</string>
+
+    <!-- Modelos de jogo -->
+    <string name="template_free_name">Placar livre</string>
+    <string name="template_free_desc">Qualquer jogo. Digite os pontos de cada rodada e escolha se vence o maior ou o menor total.</string>
+    <string name="template_card_sum_100_name">Grade de cartas · menor até 100</string>
+    <string name="template_card_sum_100_desc">Para jogos de grade com cartas de −2 a 12. Toque nas cartas que sobraram na grade; quem encerra a rodada marca em dobro se não tiver o menor total. O jogo acaba em 100 e vence o menor total.</string>
+    <string name="template_push_luck_200_name">Arrisque a sorte · até 200</string>
+    <string name="template_push_luck_200_desc">Para jogos de virar cartas e estourar. Escolha as cartas numéricas (0–12), cartas bônus e ×2. Estourou vale 0 e 7 cartas numéricas dão +15. O jogo acaba em 200.</string>
+    <string name="template_dice_categories_name">Cartela de dados · 5 dados</string>
+    <string name="template_dice_categories_desc">A cartela clássica de 13 categorias. Toque nos dados e o app calcula a pontuação; bônus de +35 quando a parte de cima chega a 63.</string>
+    <string name="template_golf_name">Golf (jogo de cartas)</string>
+    <string name="template_golf_desc">Vence o menor total depois de 9 rodadas. Dá para mudar o número de rodadas.</string>
+    <string name="template_rummy_name">Rummy · pontos de penalidade</string>
+    <string name="template_rummy_desc">Some os pontos de penalidade de cada jogador por mão. O jogo acaba quando alguém chega a 100; vence o menor total.</string>
+    <string name="template_dominoes_name">Dominó · soma das pedras</string>
+    <string name="template_dominoes_desc">Quem bate marca a soma das pedras que sobraram na mão dos adversários. O jogo acaba quando alguém chega a 100.</string>
+    <string name="template_dominoes_hits_name">Dominó · batidas até 6</string>
+    <string name="template_dominoes_hits_desc">Do jeito brasileiro, geralmente em duplas: cada mão vale pelo tipo de batida (simples, carroça, lá-e-lô, cruzada). Vence quem chega a 6.</string>
+    <string name="template_truco_name">Truco · até 12</string>
+    <string name="template_truco_desc">Truco paulista: cada mão vale 1, 3, 6, 9 ou 12. Dois lados; vence quem chega a 12.</string>
+
+    <!-- Nova partida -->
+    <string name="new_title">Nova partida</string>
+    <string name="new_section_game">Jogo</string>
+    <string name="new_section_options">Regras</string>
+    <string name="new_section_players">Jogadores</string>
+    <string name="new_highest_wins">Maior vence</string>
+    <string name="new_lowest_wins">Menor vence</string>
+    <string name="new_target_points">O jogo acaba em (pontos)</string>
+    <string name="new_target_points_optional">O jogo acaba em (pontos, opcional)</string>
+    <string name="new_rounds">Número de rodadas</string>
+    <string name="new_add_player_label">Nome do jogador</string>
+    <string name="new_add_player">Adicionar jogador</string>
+    <string name="new_remove_player">Remover jogador</string>
+    <string name="new_who_starts">Quem começa?</string>
+    <string name="new_starts_body">%s começa! A ordem dos jogadores foi girada para combinar.</string>
+    <string name="new_start">COMEÇAR PARTIDA</string>
+    <plurals name="new_error_min_players">
+        <item quantity="one">Adicione pelo menos %d jogador.</item>
+        <item quantity="other">Adicione pelo menos %d jogadores.</item>
+    </plurals>
+    <string name="new_error_max_players">Este jogo permite até %d jogadores.</string>
+    <string name="new_error_rounds">Defina o número de rodadas.</string>
+
+    <!-- Partida -->
+    <string name="match_round">Rodada %d</string>
+    <string name="match_show_results">Ver resultado</string>
+    <string name="match_highest_wins">Maior vence</string>
+    <string name="match_lowest_wins">Menor vence</string>
+    <string name="match_ends_at_points">acaba em %d</string>
+    <plurals name="match_rounds">
+        <item quantity="one">%d rodada</item>
+        <item quantity="other">%d rodadas</item>
+    </plurals>
+    <string name="match_all_categories">todas as categorias</string>
+    <string name="match_no_end">sem limite</string>
+    <string name="match_bonus_row">Bônus</string>
+
+    <!-- Lançamento de pontos -->
+    <string name="entry_tap_cards">Tocar cartas</string>
+    <string name="entry_type_total">Digitar total</string>
+    <string name="entry_tap_hint">Toque no valor de cada carta que sobrou na grade</string>
+    <string name="entry_clear">Limpar</string>
+    <string name="entry_closer">Encerrou a rodada (dobra se não for o menor)</string>
+    <string name="entry_number_cards">Cartas numéricas</string>
+    <string name="entry_modifiers">Cartas bônus</string>
+    <string name="entry_bust">Estourou (vale 0)</string>
+    <string name="entry_flip_bonus">7 cartas! +%d</string>
+    <string name="entry_dice_hint">Toque nos cinco dados. Toque num dado acima para removê-lo.</string>
+    <string name="entry_scratch">Riscar (0)</string>
+    <string name="entry_delete">Apagar pontuação</string>
+
+    <!-- Categorias de dados -->
+    <string name="dice_ones">Uns</string>
+    <string name="dice_twos">Dois</string>
+    <string name="dice_threes">Três</string>
+    <string name="dice_fours">Quatros</string>
+    <string name="dice_fives">Cincos</string>
+    <string name="dice_sixes">Seis</string>
+    <string name="dice_three_of_a_kind">Trinca</string>
+    <string name="dice_four_of_a_kind">Quadra</string>
+    <string name="dice_full_house">Full house</string>
+    <string name="dice_small_straight">Sequência baixa</string>
+    <string name="dice_large_straight">Sequência alta</string>
+    <string name="dice_five_of_a_kind">Quina</string>
+    <string name="dice_chance">Chance</string>
+
+    <!-- Pontos rápidos -->
+    <string name="entry_choose">Escolher</string>
+    <string name="entry_type_value">Digitar valor</string>
+    <string name="quick_hit_simple">Batida simples</string>
+    <string name="quick_hit_double">Batida de carroça</string>
+    <string name="quick_hit_both_ends">Lá-e-lô</string>
+    <string name="quick_hit_cross">Cruzada</string>
+    <string name="quick_blocked">Jogo trancado</string>
+    <string name="quick_truco_regular">Mão normal</string>
+    <string name="quick_truco">Truco</string>
+    <string name="quick_truco_six">Seis</string>
+    <string name="quick_truco_nine">Nove</string>
+    <string name="quick_truco_twelve">Doze</string>
+
+    <!-- Guia rápido -->
+    <string name="guide_open">Como marcar</string>
+    <string name="guide_title">Guia rápido</string>
+    <string name="guide_tips_title">Dicas</string>
+    <string name="guide_tip_edit">Toque numa célula já preenchida para corrigir ou apagar.</string>
+    <string name="guide_tip_undo">A seta de desfazer volta a última mudança.</string>
+    <string name="guide_tip_results">O troféu mostra a classificação a qualquer momento, e dá para continuar jogando depois do resultado.</string>
+    <string name="guide_tip_saved">A partida fica salva: pode fechar o app e voltar depois.</string>
+    <string name="guide_got_it">ENTENDI</string>
+
+    <string name="guide_free_1">Toque na célula do jogador na rodada para digitar os pontos. Use ± para valores negativos.</string>
+    <string name="guide_free_2">Não precisa lançar zero: deixe vazio quem não pontuou.</string>
+    <string name="guide_free_3">Ao criar a partida você escolhe se vence o maior ou o menor total e, se quiser, um alvo que encerra o jogo.</string>
+
+    <string name="guide_card_sum_1">No fim de cada rodada, toque na célula do jogador e toque no valor de cada carta que sobrou na grade dele, ou use \"Digitar total\".</string>
+    <string name="guide_card_sum_2">Marque \"Encerrou a rodada\" para quem virou todas as cartas primeiro. Se a pontuação dele for positiva e não for a menor da rodada, ela dobra; o placar mostra ×2.</string>
+    <string name="guide_card_sum_3">Quando alguém chega a 100 no fim de uma rodada, o jogo acaba. Vence o menor total.</string>
+
+    <string name="guide_push_luck_1">Quando o jogador parar ou estourar, toque na célula dele.</string>
+    <string name="guide_push_luck_2">Toque nas cartas numéricas que ele tem, nas cartas bônus (+2 a +10) e no ×2, se tiver. O ×2 dobra só as numéricas.</string>
+    <string name="guide_push_luck_3">7 cartas numéricas diferentes somam +15 automaticamente. Se estourou, marque \"Estourou\" e a rodada vale 0.</string>
+    <string name="guide_push_luck_4">Quando alguém chega a 200 no fim de uma rodada, o jogo acaba. Vence o maior total.</string>
+
+    <string name="guide_dice_1">Cada linha é uma categoria. Na sua vez, toque na célula da categoria que quer usar.</string>
+    <string name="guide_dice_2">Toque nos cinco dados que ficaram na mesa; o app calcula os pontos daquela categoria.</string>
+    <string name="guide_dice_3">Se não servir em nada, use \"Riscar (0)\" numa categoria livre.</string>
+    <string name="guide_dice_4">A linha Bônus mostra o progresso da parte de cima: com 63 pontos ganha +35. O jogo acaba quando todos preenchem as 13 categorias.</string>
+
+    <string name="guide_golf_1">No fim de cada rodada, toque na célula de cada jogador e digite os pontos das cartas dele.</string>
+    <string name="guide_golf_2">Cartas negativas? Use ± no teclado.</string>
+    <string name="guide_golf_3">Depois do número de rodadas combinado (9 por padrão), vence o menor total.</string>
+
+    <string name="guide_rummy_1">Quando alguém bater, toque na célula de cada jogador e digite os pontos das cartas que ficaram na mão dele.</string>
+    <string name="guide_rummy_2">Quem bateu pode ficar vazio (0).</string>
+    <string name="guide_rummy_3">Quando alguém chega a 100 no fim de uma mão, o jogo acaba. Vence o menor total.</string>
+
+    <string name="guide_dominoes_1">Quem bate marca a soma das pedras que sobraram na mão dos adversários: toque na célula dele e digite o total.</string>
+    <string name="guide_dominoes_2">Se o jogo trancar, quem tiver menos pontos na mão marca a soma dos outros.</string>
+    <string name="guide_dominoes_3">Só quem ganha a mão pontua. O jogo acaba assim que alguém chega ao alvo (100 por padrão).</string>
+
+    <string name="guide_hits_1">Jogando em duplas, cadastre cada dupla como um jogador (ex.: \"Nós\" e \"Eles\").</string>
+    <string name="guide_hits_2">A cada mão, toque na célula de quem bateu e escolha o tipo de batida: simples +1, carroça +2, lá-e-lô +3, cruzada +4, jogo trancado +1.</string>
+    <string name="guide_hits_3">Os valores variam por região: use \"Digitar valor\" se na sua mesa for diferente.</string>
+    <string name="guide_hits_4">Vence quem chega a 6 primeiro. O alvo pode ser mudado ao criar a partida.</string>
+
+    <string name="guide_truco_1">Cadastre as duas duplas (ou os dois jogadores) como jogadores, ex.: \"Nós\" e \"Eles\".</string>
+    <string name="guide_truco_2">A cada mão, toque na célula de quem ganhou e escolha quanto valeu: mão normal +1, truco +3, seis +6, nove +9, doze +12. Se o adversário correu, marque o que a mão valia antes do pedido.</string>
+    <string name="guide_truco_3">Mão de onze: quem está com 11 pode ver as cartas do parceiro e decidir se joga valendo 3; se correr, o adversário marca 1.</string>
+    <string name="guide_truco_4">Vence quem chega a 12 primeiro. Joga outra variante? Use \"Digitar valor\" e ajuste o alvo ao criar a partida.</string>
+
+    <!-- Resultado -->
+    <string name="result_winner">Vencedor</string>
+    <string name="result_tie">Deu empate!</string>
+    <string name="result_finish">ENCERRAR PARTIDA</string>
+    <string name="result_back_home">VOLTAR ÀS PARTIDAS</string>
+    <string name="result_keep_playing">Continuar jogando</string>
+    <string name="result_luckydraw">Precisa sortear nomes ou números? Experimente o LuckyDraw</string>
+    <string name="share_title">Compartilhar placar</string>
+    <string name="share_body">🏆 %1$s\n\n%2$s\n\nMarque o placar você também: %3$s</string>
+
+    <!-- Ajustes -->
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_language">Idioma</string>
+    <string name="settings_language_system">Idioma do sistema</string>
+    <string name="settings_privacy">Opções de privacidade</string>
+    <string name="settings_privacy_desc">Revise como os anúncios usam seus dados</string>
+    <string name="settings_rate">Avaliar o app</string>
+    <string name="settings_share_app">Compartilhar o app</string>
+    <string name="share_app_body">Eu marco o placar dos jogos de tabuleiro e cartas com este app: %s</string>
+    <string name="settings_luckydraw_desc">Nosso app para sortear nomes e números</string>
+    <string name="settings_version">Versão %s</string>
+</resources>
