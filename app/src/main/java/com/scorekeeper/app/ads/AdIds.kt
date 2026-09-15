@@ -18,10 +18,9 @@ object AdIds {
     private const val TEST_BANNER = "ca-app-pub-3940256099942544/6300978111"
     private const val TEST_INTERSTITIAL = "ca-app-pub-3940256099942544/1033173712"
 
-    // TODO antes do release: criar o app no AdMob e colar aqui os blocos reais.
-    // Enquanto forem iguais aos de teste, [usingTestIds] continua true.
-    private const val PROD_BANNER = TEST_BANNER
-    private const val PROD_INTERSTITIAL = TEST_INTERSTITIAL
+    // Blocos reais da conta AdMob. O prefixo bate com o APPLICATION_ID do manifest.
+    private const val PROD_BANNER = "ca-app-pub-5043299631567488/6869363894"
+    private const val PROD_INTERSTITIAL = "ca-app-pub-5043299631567488/1528960199"
 
     val banner: String get() = if (BuildConfig.DEBUG) TEST_BANNER else PROD_BANNER
     val interstitial: String get() = if (BuildConfig.DEBUG) TEST_INTERSTITIAL else PROD_INTERSTITIAL

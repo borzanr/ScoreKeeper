@@ -12,13 +12,13 @@
         android:theme="@style/Theme.ScoreKeeper">
 
         <!--
-            TODO antes do release: trocar pelo App ID real (com "~") do app criado
-            no AdMob. Este é o App ID de exemplo do Google, que só serve anúncios
-            de teste. Os unit IDs ficam em ads/AdIds.kt.
+            App ID real da conta AdMob (com "~"). Vale para todos os builds: o que
+            separa teste de produção são os unit IDs em ads/AdIds.kt, que em debug
+            continuam sendo os de teste do Google.
         -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713" />
+            android:value="ca-app-pub-5043299631567488~2485239637" />
 
         <activity
             android:name=".MainActivity"
