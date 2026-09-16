@@ -32,9 +32,19 @@ O conteúdo está em `../site/`, no mesmo esquema do LuckyDraw:
   - fundo `#0E0A14`;
   - dourado `#F2C14E` (ação e brasão);
   - lilás `#B794F6` (manto do mago).
-- **Arte:** `mago-keeper-logo.jfif`, na raiz do projeto.
+- **Arte:** `mago-keeper-logo.jfif`, na raiz do projeto. **Gerada por IA.**
   - O ícone e a splash são o brasão recortado dela.
   - O gráfico de destaque usa a ilustração inteira.
+
+### Declaração de recursos gerados com IA
+
+A Play pergunta isso a cada versão nova. A resposta é sempre a mesma:
+
+| Recurso | Marcar? | Por quê |
+| --- | --- | --- |
+| Ícone do app | Sim | Recorte da ilustração gerada por IA |
+| Recursos gráficos | Sim | Usam a mesma ilustração |
+| Capturas de tela | Não | Telas reais do app; a moldura e as frases são HTML e CSS |
 
 ## Nomes de jogos: o que pode e o que não pode
 
