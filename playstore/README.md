@@ -304,6 +304,57 @@ Todos os países. O app cai no inglês em qualquer idioma que não seja PT ou ES
 - **Assinatura:** aceite o **Play App Signing**.
 - **A cada nova versão:** suba o `versionCode` em `app/build.gradle.kts`.
 
+## Pós-lançamento
+
+### Primeira semana, no Play Console
+
+- **Vitals** (Qualidade → Android vitals). São os dois números que a Play usa para
+  rebaixar um app na busca:
+  - taxa de falhas percebidas pelo usuário: manter **abaixo de 1,09%**;
+  - taxa de ANR (app não responde): manter **abaixo de 0,47%**.
+
+  Qualquer pico aparece aqui com o stack trace. Como o app é offline e simples, o
+  risco maior está em aparelhos antigos e no SDK de anúncios.
+- **Avaliações**: responda todas nas primeiras semanas. Procure padrões, não notas
+  isoladas. Reclamação sobre regra de jogo é a mais provável, porque as regras
+  variam por região — foi o que aconteceu com o dominó.
+- **Instalações x desinstalações**: desinstalação alta no primeiro dia costuma ser
+  expectativa errada vinda da ficha. Aí o ajuste é nas capturas e na descrição, não
+  no app.
+
+### Primeira semana, no AdMob
+
+- **Taxa de preenchimento e eCPM**: preenchimento baixo no começo é normal enquanto
+  o app tem pouco tráfego.
+- **Consentimento**: confirme que a mensagem europeia está sendo servida antes de
+  contar com receita da Europa.
+- **Cliques próprios**: nunca toque nos anúncios reais. O Redmi está cadastrado em
+  Configurações → Dispositivos de teste, e a lista em `ads/AdIds.kt` é a segunda
+  camada. Se trocar de aparelho, cadastre o novo antes de instalar.
+
+### O que o feedback costuma pedir
+
+- **Regra diferente da região**: ajuste em `rules/`, com teste em
+  `app/src/test/.../ScoreEngineTest.kt`. Se a variação for grande, vale um modelo
+  novo em vez de mudar o existente.
+- **Jogo que falta**: um modelo novo é barato — um `GameTemplate`, as strings nos
+  três idiomas e os passos do guia. O motor de pontuação já cobre soma, alvo,
+  rodadas fixas, categorias e um pontuador por rodada.
+
+### A cada nova versão
+
+1. Suba o `versionCode` em `app/build.gradle.kts`. A Play recusa o mesmo número.
+2. `./gradlew.bat testDebugUnitTest` e teste no aparelho físico.
+3. `./gradlew.bat bundleRelease` e envie o `.aab`.
+4. Notas da versão nos três idiomas.
+5. Declaração de recursos gerados com IA: veja a tabela na seção de identidade.
+
+### Uma vez por ano
+
+A Play exige que apps atualizados usem um `targetSdk` recente. Quando o prazo
+chegar, suba `targetSdk` em `app/build.gradle.kts`, teste no aparelho e publique.
+Ignorar isso não tira o app do ar, mas bloqueia novas versões.
+
 ## Regerar
 
 ```bash
